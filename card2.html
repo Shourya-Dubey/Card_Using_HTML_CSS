@@ -14,32 +14,86 @@
     .container{
         width: 100vw;
         height: 100vh;
-        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,160,187,1) 0%, rgba(0,188,219,0.90) 90% );
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  
 
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     .card{
-        width: 24%;
-        height: 77%;
+        width: 30vw;
+        height: 80vh;
         background-color: white;
-        border-radius: 18px;
+        border-radius: 17px;
+        
         display: flex;
+        flex-direction: column;
     }
-    .card img{
+    #image{
         width: 100%;
-        height: 35%;
-        border-top-left-radius: 18px;
-        border-top-right-radius: 18px;
+        height: 41%;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+    }
+    .textarea h2{
+        text-align: center;
+        margin-top: 4%;
+    }
+    .textarea p{
+        margin-left: 6%;
+        margin-right: 6%;
+        text-align: center;
+        margin-top: 2%;
+    }
+    .amountarea{
+        background-color: rgb(47, 131, 199);
+        width: 87%;
+        height: 13%;
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-top: 4%;
+        border-radius: 17px;
+
+        display: flex;
+
+    }
+    .payment{
+        background-color: rgb(11, 50, 116);
+        width: 87%;
+        height: 8%;
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-top: 4%;
+        border-radius: 17px;
+        color: white;
+        text-align:center;
+        font-weight: bold; 
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  
+    }
+    .card a{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        margin-top: 3%;  
     }
 
 </style>
 <body>
     <div class="container">
         <div class="card">
-            <div class="img">
-                <img src="card2.jpg" alt="">
+            <img id="image" src="card2.jpg" alt="">
+            <div class="textarea">
+                <h2>Order Summary</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur perspiciatis voluptate a, assumenda inventore expedita!</p>
             </div>
+            <div class="amountarea">
+
+            </div>
+            <div class="payment">
+                <p>Procedd to payment</p>
+            </div>
+            <a href="https://www.codehelp.com">Cancel Order</a>
         </div>
     </div>
 </body>
