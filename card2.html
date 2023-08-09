@@ -12,103 +12,123 @@
         box-sizing: border-box;
     }
     .container{
+        background-image: radial-gradient( circle farthest-corner at 0.2% 0.5%,  rgb(78, 42, 186) 3.7%, rgba(84,212,228,1) 92.7% );
         width: 100vw;
         height: 100vh;
-        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,160,187,1) 0%, rgba(0,188,219,0.90) 90% );
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  
 
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .card{
-        width: 30vw;
-        height: 80vh;
         background-color: white;
-        border-radius: 17px;
-        
-        display: flex;
-        flex-direction: column;
-    }
-    #image{
-        width: 100%;
-        height: 40%;
-        border-top-left-radius: 17px;
-        border-top-right-radius: 17px;
-    }
-    .textarea h2{
-        text-align: center;
-        margin-top: 4%;
-    }
-    .textarea p{
-        margin-left: 6%;
-        margin-right: 6%;
-        text-align: center;
-        margin-top: 2%;
-    }
-    .amountarea{
-        background-color: rgb(47, 131, 199);
-        width: 87%;
-        height: 13%;
-        margin-left: 6%;
-        margin-right: 6%;
-        margin-top: 4%;
-        border-radius: 17px;
-    }
-    .amountarea leftbox{
-        display: flex;
-    }
-    .amountarea rightbox{
-        display: flex;
-        flex-direction: column;
-    }
-    #playimg{
-        width: 26px;
-    }
-    .payment{
-        background-color: rgb(11, 50, 116);
-        width: 87%;
-        height: 8%;
-        margin-left: 6%;
-        margin-right: 6%;
-        margin-top: 4%;
-        border-radius: 17px;
-        color: white;
-        text-align:center;
-        font-weight: bold; 
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  
-    }
-    .card a{
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        margin-top: 3%;  
-    }
+        width: 22vw;
+        height: 72vh;
+        border-radius: 18px;
+        box-shadow: 5px 5px 20px rgb(9, 80, 146);
 
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+    }
+    .card #img{
+        width: 100%;
+        height: 37%;
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+    }
+    .textarea{
+        width: 70%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 44px;
+        text-align: center;
+    }
+    .paymentbox{
+        background-color: rgb(53, 158, 227);
+        border-radius: 7px;
+        width: 88%;
+        height: 12%;
+        margin-left: 18px;
+        margin-right: 20px;
+        box-shadow: 3px 3px 10px rgb(21, 75, 110);
+
+        display: flex;
+    }
+    .paymentbox .leftbox{
+        display: flex;
+        padding-left: 7px;
+        align-items: center;
+        width: 100%;
+    }
+    .paymentbox .leftbox #lefboximg{
+        width: 35px;
+        height: 35px;
+        margin: 8px 11px;
+    }
+    .paymentbox .rightbox{
+        display: flex;
+        width: fit-content;
+        padding-right: 7px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .paymentclick{
+        background-color: rgb(32, 32, 116);
+        border-radius: 7px;
+        width: 88%;
+        height: 8%;
+        margin-left: 18px;
+        margin-right: 20px;
+        box-shadow: 3px 5px 10px rgb(21, 25, 72);
+    }
+    .paymentclick p{
+        color: rgb(211, 207, 207);
+        text-align: center;
+        margin-top: 8px;
+    }
+    .paymentclick:hover{
+        transform: scale(1.05);
+    }
+    #cencel{
+        text-align: center;
+        font-weight: bold;
+    }
+   
 </style>
 <body>
     <div class="container">
         <div class="card">
-            <img id="image" src="card2.jpg" alt="">
+            <img id="img" src="card2.jpg" alt="">
+
             <div class="textarea">
                 <h2>Order Summary</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur perspiciatis voluptate a, assumenda inventore expedita!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quia doloribus quibusdam impedit nostrum .</p>
             </div>
-            <div class="amountarea">
+
+            <div class="paymentbox">
                 <div class="leftbox">
-                    <img id="playimg" src="matt-icons_player4.png" alt="">
-                    <span>$99.9/Year</span>
+                    <img id="lefboximg" src="matt-icons_player4.png" alt="">
+
+                    <p>Amount</p>
+                    <p>$99.9/year</p>
                 </div>
                 <div class="rightbox">
-                    <a href="https//www.spotify.com">Change</a>
+                    <a href="Www.spotify.com">Change</a>
                 </div>
             </div>
-            <div class="payment">
-                <p>Procedd to payment</p>
+
+            <div class="paymentclick">
+                <p>Proceed to Payment</p>
             </div>
-            <a href="https://www.codehelp.com">Cancel Order</a>
+            <p id="cencel">Cancel Order</p>
         </div>
     </div>
 </body>
 </html>
-
